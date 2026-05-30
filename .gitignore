@@ -1,0 +1,16 @@
+node_modules/
+.DS_Store
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Capacitor
+.capacitor/
+
+# iOS
+ios/App/Pods/
+ios/App/build/
+ios/DerivedData/
+ios/App/output/
+**/xcuserdata/
+*.xcuserstate

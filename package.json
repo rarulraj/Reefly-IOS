@@ -1,0 +1,23 @@
+{
+  "name": "reefly-ios",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Reefly iOS wrapper (Capacitor) for https://reeflycare.com",
+  "scripts": {
+    "sync": "cap sync ios",
+    "open": "cap open ios",
+    "run": "cap run ios",
+    "doctor": "cap doctor"
+  },
+  "dependencies": {
+    "@capacitor/app": "^6.0.3",
+    "@capacitor/cli": "^6.2.1",
+    "@capacitor/core": "^6.2.1",
+    "@capacitor/ios": "^6.2.1",
+    "@capacitor/splash-screen": "^6.0.4",
+    "@capacitor/status-bar": "^6.0.3"
+  },
+  "devDependencies": {
+    "typescript": "^5.9.3"
+  }
+}
