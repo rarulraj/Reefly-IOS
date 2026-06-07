@@ -81,7 +81,7 @@ npx cap sync ios
 
 ### One-time setup (before App Store submission)
 
-1. **App Store Connect** — create an auto-renewable subscription (e.g. `reefly_premium_monthly`, $3.99/month) under your app.
+1. **App Store Connect** — create an auto-renewable subscription (e.g. `reefly_premium_monthly`, $4.99/month) under your app.
 2. **RevenueCat** ([revenuecat.com](https://www.revenuecat.com)) — create a project, add the iOS app, import the App Store product, and create an entitlement named `premium` linked to that product. Add a default offering with one monthly package.
 3. **RevenueCat webhook** — point it at `https://reeflycare.com/api/revenuecat/webhook` with an Authorization header matching `REVENUECAT_WEBHOOK_AUTH_HEADER` in the web app's env.
 4. **Web app env** (Vercel / `.env.local` on the Reefly repo) — set:
