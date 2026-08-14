@@ -104,6 +104,10 @@ class MainViewController: CAPBridgeViewController {
         // Cover the page already loading on first launch.
         webView?.evaluateJavaScript(viewportLockJS, completionHandler: nil)
 
+        // Inline playback is required for Live View <video> in WKWebView.
+        webView?.configuration.allowsInlineMediaPlayback = true
+        webView?.configuration.mediaTypesRequiringUserActionForPlayback = []
+
         lockZoom()
     }
 

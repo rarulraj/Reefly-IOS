@@ -22,6 +22,9 @@
 	<string>$(CURRENT_PROJECT_VERSION)</string>
 	<key>NSCameraUsageDescription</key>
 	<string>Reefly uses the camera for Live View, reef checks, and ReefDex scans so you can capture and analyze your tank.</string>
+	<!-- Required for getUserMedia / Live View in WKWebView even when audio is off — without this, mediaDevices is often undefined on iOS. -->
+	<key>NSMicrophoneUsageDescription</key>
+	<string>Reefly needs microphone access so the camera can work for Live View and reef checks on iPhone.</string>
 	<key>NSPhotoLibraryAddUsageDescription</key>
 	<string>Reefly saves the photos and video clips you capture in Live View to your photo library.</string>
 	<key>NSLocationWhenInUseUsageDescription</key>
